@@ -137,6 +137,13 @@ return stringOne + stringTwo;
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
+    var r = '';
+    var i = 0;
+    while(i < args.length){
+        r += args[i];
+        i++;
+    }
+    return r;
 
 
     // YOUR CODE ABOVE HERE //
@@ -149,6 +156,12 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    if(stringOne.length > stringTwo.length){
+        return stringOne;
+    }
+    else{
+        return stringTwo;
+    }
 
 
 
@@ -164,6 +177,14 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+ var a = stringOne.localeCompare(stringTwo);
+    if (a == -1){
+        a = 1;
+    }
+    else if(a == 1){
+        a = -1;
+    }
+return a;
 
 
 
@@ -180,8 +201,7 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+    return stringOne.localeCompare(stringTwo);
 
 
     // YOUR CODE ABOVE HERE //

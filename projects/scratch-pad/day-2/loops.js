@@ -12,7 +12,11 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
+  var i = 0;
+  while(i < array.length){
+    console.log(array[i]);
+    i++;
+  }
   
   
   
@@ -25,7 +29,11 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
+ var i = array.length - 1;
+ while(i > -1){
+   console.log(array[i]);
+   i--;
+ }
   
   
   
